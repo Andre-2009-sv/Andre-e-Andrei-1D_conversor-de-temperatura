@@ -4,17 +4,17 @@ INÍCIO
     LEIA temperatura
 
     ESCREVA "Digite a escala de origem (Celsius, Fahrenheit, Kelvin):"
-    LEIA escala_origem
+    LEIA origemDaEscala
 
-    SE escala_origem FOR "Celsius" OU "celsius" ENTÃO
+    SE origemDaEscala FOR "Celsius" OU "celsius" ENTÃO
         CONVERTER para Fahrenheit e Kelvin
         ESCREVA resultado
 
-    SENÃO SE escala_origem FOR "Fahrenheit" OU "fahrenheit" ENTÃO
+    SENÃO SE origemDaEscala FOR "Fahrenheit" OU "fahrenheit" ENTÃO
         CONVERTER para Celsius e Kelvin
         ESCREVA resultado
 
-    SENÃO SE escala_origem FOR "Kelvin" OU "kelvin" ENTÃO
+    SENÃO SE origemDaEscala FOR "Kelvin" OU "kelvin" ENTÃO
         CONVERTER para Celsius e Fahrenheit
         ESCREVA resultado
 
