@@ -3,7 +3,7 @@ INÍCIO
     ESCREVA "Digite a temperatura:"
     LEIA temperatura
 
-    ESCREVA "Digite a escala de origem (Celsius, Fahrenheit, Kelvin):"
+    ESCREVA "Digite a escala de origem:"
     LEIA origemDaEscala
 
     SE origemDaEscala FOR "Celsius" OU "celsius" ENTÃO
