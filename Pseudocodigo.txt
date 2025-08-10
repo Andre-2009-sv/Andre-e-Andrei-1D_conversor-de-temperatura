@@ -1,24 +1,23 @@
 INÍCIO
+    Mostrar "Conversor de Temperatura"
+    Ler temperatura (float)
+    Ler escala_origem (char)
 
-    ESCREVA "Digite a temperatura:"
-    LEIA temperatura
+    Se escala_origem == 'C' ou 'c':
+        Calcular Fahrenheit = (temperatura × 9/5) + 32
+        Calcular Kelvin = temperatura + 273.15
+        Mostrar Fahrenheit e Kelvin
 
-    ESCREVA "Digite a escala de origem:"
-    LEIA origemDaEscala
+    Senão se escala_origem == 'F' ou 'f':
+        Calcular Celsius = (temperatura - 32) × 5/9
+        Calcular Kelvin = Celsius + 273.15
+        Mostrar Celsius e Kelvin
 
-    SE origemDaEscala FOR "Celsius" OU "celsius" ENTÃO
-        CONVERTER para Fahrenheit e Kelvin
-        ESCREVA resultado
+    Senão se escala_origem == 'K' ou 'k':
+        Calcular Celsius = temperatura - 273.15
+        Calcular Fahrenheit = (Celsius × 9/5) + 32
+        Mostrar Celsius e Fahrenheit
 
-    SENÃO SE origemDaEscala FOR "Fahrenheit" OU "fahrenheit" ENTÃO
-        CONVERTER para Celsius e Kelvin
-        ESCREVA resultado
-
-    SENÃO SE origemDaEscala FOR "Kelvin" OU "kelvin" ENTÃO
-        CONVERTER para Celsius e Fahrenheit
-        ESCREVA resultado
-
-    SENÃO
-        ESCREVA "Escala inválida!"
-
+    Senão:
+        Mostrar "Escala inválida."
 FIM
